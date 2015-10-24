@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Art Club</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="css/MasterStyle.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/> 
+    <asp:ContentPlaceHolder id="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="masterForm" runat="server">
+        <div id="container">
+            <header>
+                <div class="jumbotron" id="outer">
+                     <ul class="nav navbar-nav navbar-right">
+                            <li><asp:Image ID="ImgLogo" runat="server" ImageUrl="images/logo.png" CssClass="img-responsive imgLogo" 
+                                Width="198" Height="110"/></li>
+                             <li><asp:TextBox ID="TxtSearch" runat="server" CssClass="form-control txtSearch"></asp:TextBox></li>
+                             <li><asp:Button ID="BtnSearch" runat="server" OnClick="BtnSearch_Click" Text="Search" CssClass="btn btn-default search" /></li>
+                             <li><asp:Button ID="BtnRegister" runat="server" OnClick="BtnRegister_Click" Text="Register" CssClass="btn btn-default register"/></li>
+                             <li><asp:Button ID="BtnLogin" runat="server" OnClick="BtnLogin_Click" Text="Login" CssClass="btn btn-default login" /> </li>    
+                     </ul>  
+                </div>
+            </header>
+            <ul id="navigation">
+
+            </ul>
+            <div id="content">
+               
+            </div>     
+    </div>
+    <asp:ContentPlaceHolder id="BodyContent" runat="server">
+        
+    </asp:ContentPlaceHolder>
+        <div class="jumbotron">
+             <footer>
+                <div id="footer">
+                    <h4><em><b>Share us on:</b></em></h4>
+                   <asp:Image ID="ImgFacebook" runat="server" ImageUrl="images/facebook.png" width="45" Height="45" CssClass="iconImage"/>
+                   <asp:Image ID="ImgInstagram" runat="server" ImageUrl="images/instagram.png" width="45" Height="45" CssClass="iconImage"/>
+                   <asp:Image ID="Imgtwitter" runat="server" ImageUrl="images/twitter.png" width="45" Height="45" CssClass="iconImage"/>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

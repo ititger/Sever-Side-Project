@@ -1,0 +1,29 @@
+﻿.image{
+    height: auto;
+}
+
+#BtnRegister,#BtnLogin,#BtnSearch{margin-right:6em; border-radius:4px;}
+
+.thumbnail{margin:1em 1em 0.5em 1em;}
+
+ #TxtSearch{width:12em;}
+
+.txtSearch{margin:1em 0em 5em 25em;
+        padding: 0.3em
+}
+.search{ margin: 1em 0em 5em 0.3em;
+    padding:0.3em;}
+.register {
+    margin: 1em 0em 5em 2.8em;
+    padding:0.3em;}
+.login{margin: 1em 8em 1.5em 0.4em;padding:0.3em;}
+
+#outer {
+    width: 100%;
+    text-align: center;
+}
+.iconImage{margin:0.2em;padding:0.2em;}
+
+.imgLogo {
+    padding-bottom: 55px;
+}
