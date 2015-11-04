@@ -1,0 +1,5 @@
+﻿body {
+}
+.imgLogo{display:inline;}
+
+#TxtUserName, #TxtPassword, #TxtEmail{height:2.1em; width:13em;}
